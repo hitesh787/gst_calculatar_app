@@ -41,7 +41,7 @@ class _GstCalculatorAppState extends State<GstCalculatorApp> {
 
   Future<void> scheduleDailyNotifications() async {
 
-    final targetTime = DateTime.now().add(const Duration(days: 1)); // Set the time for the first notification (e.g., tomorrow)
+    final targetTime = DateTime.now().add(const Duration(days: 1));
 
     await AwesomeNotifications().createNotification(
       content: NotificationContent(
